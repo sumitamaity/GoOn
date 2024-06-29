@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="XM_TestSuite">
+    <test name="XM_Test_Medium">
+        <parameter name="resolution" value="MAXIMUM" />
+        <classes>
+            <class name="TC_001_NorwayStock" />
+        </classes>
+    </test>
+    <test name="XM_Test_Small">
+        <parameter name="resolution" value="SMALL" />
+        <classes>
+            <class name="TC_001_NorwayStock" />
+        </classes>
+    </test>
+    <test name="XM_Test_Maximum">
+        <parameter name="resolution" value="MEDIUM" />
+        <classes>
+            <class name="TC_001_NorwayStock" />
+        </classes>
+   </test>-->
+</suite>
