@@ -29,17 +29,17 @@ public class TradingConditionsPage extends Base {
     @FindBy(css="table.table.pull-left > tbody > tr > td")
     List<WebElement> tradingConditionsLeftKeys;
 
-    @CacheLookup
-    @FindBy(css="table.table.pull-left > tbody > tr > td[data-xm-qa-name$=value]")
-    List<WebElement> tradingConditionsLeftValues;
+//    @CacheLookup
+//    @FindBy(css="table.table.pull-left > tbody > tr > td[data-xm-qa-name$=value]")
+//    List<WebElement> tradingConditionsLeftValues;
 
     @CacheLookup
     @FindBy(css="table.table.pull-right > tbody > tr > td")
     List<WebElement> tradingConditionsRightKeys;
 
-    @CacheLookup
-    @FindBy(css="table.table.pull-right > tbody > tr > td[data-xm-qa-name$=value]")
-    List<WebElement> tradingConditionsRightValues;
+//    @CacheLookup
+//    @FindBy(css="table.table.pull-right > tbody > tr > td[data-xm-qa-name$=value]")
+//    List<WebElement> tradingConditionsRightValues;
 
     @CacheLookup
     @FindBy(css="a[title='Orkla ASA (ORK.OL)']")

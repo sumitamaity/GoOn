@@ -54,6 +54,6 @@ public class BaseTest {
     @AfterTest
     public void quit(){
         //add null exception
-        getDriver().quit();;
+        getDriver().quit();
     }
 }

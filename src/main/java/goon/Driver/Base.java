@@ -87,7 +87,7 @@ public class Base {
 
         return rowData;
     }
-    public WebElement clickLinkInRow(WebElement table, int rowIndex) throws IOException {
+    public WebElement clickLinkInRow(WebElement table, int rowIndex)  {
         WebElement link = null;
         // Locate the table
         List<WebElement> rows = table.findElements(By.tagName("tr"));
@@ -116,16 +116,9 @@ public class Base {
         wait.until(ExpectedConditions.visibilityOf(element));
         //log else if the element is not found
     }
-    public void waitForStaleness(WebElement element) throws IOException {
-        prop= new Properties();
-        prop.load(new FileInputStream("config.property"));
-        WebDriverWait wait = new WebDriverWait(SingleDriver.getDriver(), Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.stalenessOf(element));
-        //log else if the element is not found
-    }
 
     //put this method in commons/wrappers instead
-    public void clickElement(WebElement element) throws IOException {
+    public void clickElement(WebElement element){
         if(element.isDisplayed()){
             element.click();
         }
@@ -149,7 +142,7 @@ public class Base {
        jse.executeScript("arguments[0].click();", element);
    }
 
-    public void actionClick(WebElement element) throws IOException{
+    public void actionClick(WebElement element){
 
         Actions actions = new Actions(SingleDriver.getDriver());
         actions.moveToElement(element).click().perform();
